@@ -28,4 +28,4 @@ var Object = {
 
 console.log(car);
 console.log(car2);
-console.log();
+console.log(car2);
