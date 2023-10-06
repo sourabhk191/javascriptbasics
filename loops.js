@@ -83,3 +83,6 @@ for (let num = 1; num <= 20; num = num += 1) {
   }
   console.log(num);
 }
+
+const name = "hitesh"
+const repoCount = 50

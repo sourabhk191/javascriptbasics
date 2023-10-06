@@ -72,3 +72,5 @@ console.log(movieLine);
 // console.log(movieLine(1));
 
 console.log(movieLine.indexOf("vip"));
+
+

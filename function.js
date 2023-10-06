@@ -1,89 +1,88 @@
-// function printmessage() {
-//     console.log("Hello Everyone!");
-//     console.log("sourabh");
-// }
+function printmessage() {
+    console.log("Hello Everyone!");
+    console.log("sourabh");
+}
 
-// printmessage();
+printmessage();
 
+function sayMessage() {
+    console.log("I am happy to learn full stack development");
+}
 
+sayMessage();
 
-// function sayMessage() {
-//     console.log("I am happy to learn full stack development");
-// }
+function passMessage() {
+    return "I am so happy with my placement"
+}
 
-// sayMessage();
+let message = passMessage();
 
-// function passMessage() {
-//     return "I am so happy with my placement"
-// }
+console.log(message.toUpperCase()); 
+console.log(message.toLowerCase()); 
 
-// let message = passMessage();
+const newMessage = message + " Enroll Today";
+console.log(newMessage);
 
-// console.log(message.toUpperCase()); 
-// console.log(message.toLowerCase()); 
+function passMessageWithParameter(courceName) {
+    return "I am so happy to learn " + courceName + " with my placement"
+}
 
-// const newMessage = message + " Enroll Today";
-// console.log(newMessage);
+console.log(passMessageWithParameter('full stack web development','Enroll Today'));
 
-// function passMessageWithParameter(courceName) {
-//     return "I am so happy to learn " + courceName + " with my placement"
-// }
+function sum(a, b, c) {
+    return a + b + c;
+}
 
-// console.log(passMessageWithParameter('full stack web development','Enroll Today'));
+var total = sum(1, 2, 4);
+console.log(total);
 
-// function sum(a, b, c) {
-//     return a + b + c;
-// }
+function sumOfAllParameters() {
+    let sum = 0;
+    for (let i = 0; i < arguments.length - 1; i++) {
+        sum += arguments[i]
+    }
+    return sum;
+}
 
-// const total = sum(1, 2, 4);
-// console.log(total);
+const total = sumOfAllParameters(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-// function sumOfAllParameters() {
-//     let sum = 0;
-//     for (let i = 0; i < arguments.length - 1; i++) {
-//         sum += arguments[i]
-//     }
-//     return sum;
-// }
+console.log(total);
 
-// const total = sumOfAllParameters(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+function square(x) {
+    return x * x;
+}
+const square = function (x) {
+    return x * x;
+}
+console.log(square(2));
 
-// console.log(total);
+// fat arrow function
+const square1 = (x) => x * x;
+console.log(square(3));
 
-// function square(x) {
-//     return x * x;
-// }
-// const square = function (x) {
-//     return x * x;
-// }
-// console.log(square(2));
+const square2 = (x) => {
+    console.log("Input Value >",x);
+    return x * x
+};
+console.log(square2(4));
 
-// // fat arrow function
-// const square1 = (x) => x * x;
-// console.log(square(3));
+var getFullName = function (firstName, lastName) {
+    return firstName + " " + lastName;
+}
 
-// const square2 = (x) => {
-//     console.log("Input Value >",x);
-//     return x * x
-// };
-// console.log(square2(4));
-
-// var getFullName = function (firstName, lastName) {
-//     return firstName + " " + lastName;
-// }
-
-// console.log(getFullName("sourabh", "patel"));
+console.log(getFullName("sourabh", "patel"));
  
-//anonymous function
+// anonymous function
 
-// (function (x) {
-//     console.log(x * x);
-// })(2);
+(function (x) {
+    console.log(x * x);
+})(2);
 
-// var sum = function(x,y){
-//     return x+y;
-// }
+var sum = function(x,y){
+    return x+y;
+}
 
-// var total = sum;
+var total = sum;
 
-// console.log(total(1,2));
+console.log(total(1,2));
+
